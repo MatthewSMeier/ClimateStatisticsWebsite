@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Climate Statistics</title>
+    <meta name='description' content="Dr. Sam Shen's personnel website." />
+	<meta name='keywords' content="Professor Samuel Shen, Department Mathematics and Statistics, San Diego State University, SDSU" />
+	<meta content='index,follow' name='robots' />
+	<meta content='index,follow' name='googlebot'/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+
+<body class="syllabi">
+    <div class="mobileNavbar">
+    <div class="mobileContainer">
+    <div class = "mobileBottom">Menu</div>
+    <div id="menuIcon2" class = "mobileTop">&#9776;</div>
+    </div>
+    <div id="dropdownMenu" class="dropdown-content">
+        <a class = "mobile" href="./public.html">Home</a>
+        <a class = "mobile" href="./preface.html">Preface</a>
+        <a class = "mobile" href="./toc.html">Book Contents</a>
+        <a class = "mobile" href="./ChapterIntroductions.html">Chapter Introductions</a>
+        <a class = "mobile" href="./Rcodes.html">R-Code</a>
+        <a class = "mobile" href="./PythonCodes.html">Python Code</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">R Tutorial</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">Python Tutorial</a>
+        <a class = "mobile" href="./Datasets.html">Master Dataset</a>
+        <a class = "mobile" href="./AdditionalDatasets.html">Additional Datasets</a>
+        <a class = "mobile" href="./AdditionalExcercises.html">Additional Exercises</a>
+        <a class = "mobile" href="./FiguresAndSlides.html">Figures and Slides</a>
+        <a class = "mobile" href="./Resources.html">Data Visualization</a>
+        <a class = "mobile" href="./SampleSyllabi.html">Sample Syllabi</a>
+        <a class = "mobile" href="./news.html">News</a>
+        <a class = "mobile" href="./Feedback.html">Feedback</a>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("menuIcon2").addEventListener("click", function() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    });
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#menuIcon2')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+        </script>
+    </div>
+</div>
+	<div class="topbar">
+		<div class="logo-header">
+			<a href="http://sdsu.edu">
+				<img class="sdsu-logo" src="images/sdsu_logo.png" alt="SDSU Logo" align="center"/>
+			</a>
+
+			<a href="http://www.cambridge.org">
+				<img class="cambridge-logo" src= "images/cambridge_label.png" alt="Cambridge Logo" align="left"/>
+			</a> 
+
+			<a href="https://www.tamu.edu/index.html">
+				<img class="scripps-logo" src="images/texas_logo.png" alt="Scripps Logo" align="right"/>
+			</a>
+		</div>
+
+		<div class="hamnav">
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+						
+			<div id="mobile-menu">
+				<div class="collapse" id="about">
+					<a id="mainbutton" class="about" href="#about">About</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./public.html">Home</a></li>
+								<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							 	<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+								<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="computer-code">
+					<a id="mainbutton" class="computer-code" href="#computer-code">Computer Code</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">YouTube Tutorial for R</a></li>
+								<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="datasets">
+					<a id="mainbutton" class="datasets" href="#datasets">Datasets</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+								<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="resources">
+					<a id="mainbutton" class="resources" href="#resources">Resources</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+								<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+								<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+								<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+								<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="non-collapse">
+					<a href="./news.html">News</a>
+				</div>
+
+				<div class="non-collapse">
+					<a href="./Feedback.html">Send Us Feedback</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar-spacing">
+			<div class="navbar">
+				<ul class="navbuttonsgrouped">
+					<li>
+						<a class="navbutton" href="#">About</a>
+						<ul>
+							<li><a class="subbutton" href="./public.html">Home</a></li>
+							<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+							<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Computer Code</a>
+						<ul>
+							<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured">YouTube Tutorial for R</a></li>
+							<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Datasets</a>
+						<ul>
+							<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+							<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Resources</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+							<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+							<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+							<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+							<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+						</ul>
+					</li>
+<li>
+						<a class="navbutton" href="#">News</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./news.html">Book News</a></li>
+							<li><a class="subbutton" href="./Feedback.html">Send Feedback</a></li>
+						</ul>
+</li>
+                    
+                    
+<li>
+<div id="menuIcon"><div class = "MenuTextDesktop">Menu</div>&#9776;</div>
+<div id="menu">
+  <a href="#" class="menuItem">About</a>
+  <div class="submenu">
+    <a href="./public.html" class="submenuItem">Home</a>
+    <a href="./preface.html" class="submenuItem">Preface</a>
+    <a href="./toc.html" class="submenuItem">Book Contents</a>
+    <a href="./ChapterIntroductions.html" class="submenuItem">Chapter Introductions</a>
+  </div>
+  <a href="#" class="menuItem">Computer Code</a>
+    <div class="submenu">
+    <a href="./Rcodes.html" class="submenuItem">R-Code</a>
+    <a href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured" class="submenuItem">R Tutorial</a>
+    <a href="./PythonCodes.html" class="submenuItem">Python Code</a>
+        <a href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s" class="submenuItem">Python Tutorial</a>
+  </div>
+  <a href="#" class="menuItem">Datasets</a>
+  <div class="submenu">
+    <a href="./Datasets.html" class="submenuItem">Master Dataset</a>
+    <a href="./AdditionalDatasets.html" class="submenuItem">Additional Datasets</a>
+  </div>
+  <a href="#" class="menuItem">Resources</a>
+  <div class="submenu">
+    <a href="./FiguresAndSlides.html" class="submenuItem">Figures/Slides</a>
+    <a href="./AdditionalExcercises.html" class="submenuItem">Additional Exercises</a>
+    <a href="./Resources.html" class="submenuItem">Data Visualization</a>
+    <a href="./SampleSyllabi.html" class="submenuItem">Sample Syllabi</a>
+    <a href="./Errata.html" class="submenuItem">Errata</a>
+  </div>
+  <a href="#" class="menuItem">News</a>
+  <div class="submenu">
+    <a href="./news.html" class="submenuItem">Book News</a>
+    <a href="./Feedback.html" class="submenuItem">Send Feedback</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+ <div class="preface" id="pythoncodes"><br/>
+     <center><br/><h2 class="pythoncodestitle">Python Codes for Climate Statistics </h2></center> 
+     <p>
+     <b>Chapter-by-Chapter Python Code: </b><br/>
+     Chapter 1: <a href="Code/PythonClimStatsCh1.html">Basics of Climate Data Arrays, Statistics, and Visualization</a><br>
+     Chapter 2: <a href="Code/PythonClimStatsCh2.html">Elementary Probability and Statistics</a><br>
+     Chapter 3: <a href="Code/PythonClimStatsCh3.html">Estimation and Decision Making</a><br>
+     Chapter 4: <a href="Code/PythonClimStatsCh4.html">Regression Models and Methods</a><br>
+     Chapter 5: <a href="Code/PythonClimStatsCh5.html">Matrices for Climate Data</a><br>
+     Chapter 6: <a href="Code/PythonClimStatsCh6.html">Covariance Matrices, EOFs, and PCs</a><br>
+     Chapter 7: <a href="Code/PythonClimStatsCh7.html">Introduction to Time Series</a><br>
+     Chapter 8: <a href="Code/PythonClimStatsCh8.html">Spectral Analysis of Time Series</a><br>
+     Chapter 9: <a href="Code/PythonClimStatsCh9.html">Introduction to Machine Learning</a><br>
+     </p>
+     
+     <br/>
+     <br/>
+         
+    <br/><br/>
+     <b>Citation:</b> Shen, S.S.P., and G.R. North, 2023:<i> Statistics and Data Visualization in Climate Science with R and Python</i>, Cambridge University Press, Cambridge, United Kingdom, 391pp.
+  </div>
+<div class="footer">
+  <div class="footer_inner">
+    <div id="footer_nav">
+      <div class="copyright">Copyright &copy; 2023. All rights reserved.</div>
+
+
+    </div>
+  </div>
+</div>
+</body>
+<script>
+	function myFunction() {
+		var x = document.getElementById("mobile-menu");
+	
+		  if (x.style.left === "0%") {
+			x.style.left = "80%";
+		  } else {
+			x.style.left = "0%";
+		  }
+	  }
+	</script>
+
+</html>

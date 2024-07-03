@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Climate Statistics</title>
+	<meta name='description' content="Dr. Sam Shen's personnel website." />
+	<meta name='keywords' content="Professor Samuel Shen, Department Mathematics and Statistics, San Diego State University, SDSU" />
+	<meta content='index,follow' name='robots' />
+	<meta content='index,follow' name='googlebot'/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+
+<body>
+    <div class="mobileNavbar">
+    <div class="mobileContainer">
+    <div class = "mobileBottom">Menu</div>
+    <div id="menuIcon2" class = "mobileTop">&#9776;</div>
+    </div>
+    <div id="dropdownMenu" class="dropdown-content">
+        <a class = "mobile" href="./public.html">Home</a>
+        <a class = "mobile" href="./preface.html">Preface</a>
+        <a class = "mobile" href="./toc.html">Book Contents</a>
+        <a class = "mobile" href="./ChapterIntroductions.html">Chapter Introductions</a>
+        <a class = "mobile" href="./Rcodes.html">R-Code</a>
+        <a class = "mobile" href="./PythonCodes.html">Python Code</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">R Tutorial</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">Python Tutorial</a>
+        <a class = "mobile" href="./Datasets.html">Master Dataset</a>
+        <a class = "mobile" href="./AdditionalDatasets.html">Additional Datasets</a>
+        <a class = "mobile" href="./AdditionalExcercises.html">Additional Exercises</a>
+        <a class = "mobile" href="./FiguresAndSlides.html">Figures and Slides</a>
+        <a class = "mobile" href="./Resources.html">Data Visualization</a>
+        <a class = "mobile" href="./SampleSyllabi.html">Sample Syllabi</a>
+        <a class = "mobile" href="./news.html">News</a>
+        <a class = "mobile" href="./Feedback.html">Feedback</a>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("menuIcon2").addEventListener("click", function() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    });
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#menuIcon2')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+        </script>
+    </div>
+</div>
+	<div class="topbar">
+		<div class="logo-header">
+			<a href="http://sdsu.edu">
+				<img class="sdsu-logo" src="images/sdsu_logo.png" alt="SDSU Logo" align="center"/>
+			</a>
+
+			<a href="http://www.cambridge.org">
+				<img class="cambridge-logo" src= "images/cambridge_label.png" alt="Cambridge Logo" align="left"/>
+			</a> 
+
+			<a href="https://www.tamu.edu/index.html">
+				<img class="scripps-logo" src="images/texas_logo.png" alt="Scripps Logo" align="right"/>
+			</a>
+		</div>
+
+		<div class="hamnav">
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+						
+			<div id="mobile-menu">
+				<div class="collapse" id="about">
+					<a id="mainbutton" class="about" href="#about">About</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./public.html">Home</a></li>
+								<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							 	<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+								<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="computer-code">
+					<a id="mainbutton" class="computer-code" href="#computer-code">Computer Code</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">YouTube Tutorial for R</a></li>
+								<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="datasets">
+					<a id="mainbutton" class="datasets" href="#datasets">Datasets</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+								<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="resources">
+					<a id="mainbutton" class="resources" href="#resources">Resources</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+								<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+								<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+								<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+								<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="non-collapse">
+					<a href="./news.html">News</a>
+				</div>
+
+				<div class="non-collapse">
+					<a href="./Feedback.html">Send Us Feedback</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar-spacing">
+			<div class="navbar">
+				<ul class="navbuttonsgrouped">
+					<li>
+						<a class="navbutton" href="#">About</a>
+						<ul>
+							<li><a class="subbutton" href="./public.html">Home</a></li>
+							<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+							<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Computer Code</a>
+						<ul>
+							<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured">YouTube Tutorial for R</a></li>
+							<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Datasets</a>
+						<ul>
+							<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+							<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Resources</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+							<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+							<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+							<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+							<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+						</ul>
+					</li>
+<li>
+						<a class="navbutton" href="#">News</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./news.html">Book News</a></li>
+							<li><a class="subbutton" href="./Feedback.html">Send Feedback</a></li>
+						</ul>
+</li>
+                    
+                    
+<li>
+<div id="menuIcon"><div class = "MenuTextDesktop">Menu</div>&#9776;</div>
+<div id="menu">
+  <a href="#" class="menuItem">About</a>
+  <div class="submenu">
+    <a href="./public.html" class="submenuItem">Home</a>
+    <a href="./preface.html" class="submenuItem">Preface</a>
+    <a href="./toc.html" class="submenuItem">Book Contents</a>
+    <a href="./ChapterIntroductions.html" class="submenuItem">Chapter Introductions</a>
+  </div>
+  <a href="#" class="menuItem">Computer Code</a>
+    <div class="submenu">
+    <a href="./Rcodes.html" class="submenuItem">R-Code</a>
+    <a href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured" class="submenuItem">R Tutorial</a>
+    <a href="./PythonCodes.html" class="submenuItem">Python Code</a>
+        <a href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s" class="submenuItem">Python Tutorial</a>
+  </div>
+  <a href="#" class="menuItem">Datasets</a>
+  <div class="submenu">
+    <a href="./Datasets.html" class="submenuItem">Master Dataset</a>
+    <a href="./AdditionalDatasets.html" class="submenuItem">Additional Datasets</a>
+  </div>
+  <a href="#" class="menuItem">Resources</a>
+  <div class="submenu">
+    <a href="./FiguresAndSlides.html" class="submenuItem">Figures/Slides</a>
+    <a href="./AdditionalExcercises.html" class="submenuItem">Additional Exercises</a>
+    <a href="./Resources.html" class="submenuItem">Data Visualization</a>
+    <a href="./SampleSyllabi.html" class="submenuItem">Sample Syllabi</a>
+    <a href="./Errata.html" class="submenuItem">Errata</a>
+  </div>
+  <a href="#" class="menuItem">News</a>
+  <div class="submenu">
+    <a href="./news.html" class="submenuItem">Book News</a>
+    <a href="./Feedback.html" class="submenuItem">Send Feedback</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+ <div class="chapterIntroductions"><br/><br>
+  <center><i>“Give the pupils something to do, not something to learn; and doing is of such a nature as to demand thinking; learning naturally results.”</i>
+    <br/><b>– John Dewey </b><br>
+    <br/><br/><h2>Chapter Introductions</h2></center><br><br>
+
+
+    <b>Chapter 1: Basics of Climate Data Arrays, Statistics, and Visualization</b><br/> 
+   <P>People talk about climate data frequently, also read or imagine climate data, and
+   yet rarely play with them and use them, because people often think that it takes
+   a computer expert to do that. However, that has changed. With today’s technol-
+   ogy, now anyone can use a computer to play with climate data, such as a sequence
+   of temperature values of a weather station at different observed times, a matrix
+   of data for a station for temperature, air pressure, precipitation; wind speed, and
+   wind direction at different times; and an array of temperature data on a 5-degree
+   latitude-longitude grid for the entire world for different months. The first is a vec-
+   tor. The second is a variable-time matrix, and a space-time 3-dimensional array.
+   When considering temperature variation in time at different air pressure levels and
+   different water depth, we need to add one more dimension: the altitude. The tem-
+   perature data for ocean and atmosphere for the Earth is a 4-dimensional array,
+   with 3D space and 1D time. This chapter attempts to provide basic statistical and
+   computing methods to describe and visualize some simple climate datasets. As the
+   book progresses, more complex statistics and data visualization will be introduced.
+   We use both R and Python computer codes in this book for computing and
+   visualization. Our method description is stated in R. A Python code following each
+   R code is included in a box with a light yellow background. You can also learn
+   the two computer languages and their applications to climate data from the book
+   “Climate Mathematics: Theory and Applications” (Shen and Somerville 2019) and
+   its website www.climatemathematics.org. The climate data used in this book are 
+   included in the data.zip file download- able from our book website 
+   www.climatestatistics.org. You can also obtain the updated data from the original 
+   data providers, such as www.esrl.noaa.gov and www.ncei.noaa.gov.
+   After learning this chapter, a reader should be able to analyze simple climate
+   datasets, compute data statistics, and plot the data in various ways.
+   <br/><br/>
+   <b>Chapter 2: Elementary Probability and Statistics</b><br/>
+   <P>This chapter describes the basic probability and statistics that are especially use-
+   ful in climate science. Numerous textbooks cover the subjects in this chapter. Our
+   focus is on the climate applications of probability and statistics. In particular, the
+   emphasis is on the use of modern software that is now available for students and
+   journeyman climate scientists. It is increasingly important to pull up a dataset that
+   is accessible from the Internet and have a quick look at the data in various forms
+   without worrying about the details of mathematical proofs and long derivations.
+   Special attentions are also given to the clarity on the assumptions and limitations
+   of the statistical methods when applied to climate datasets. Several application
+   examples have been included, such as the probability of dry spell and binomial dis-
+   tribution, the probability of the number of storms in a given time interval based on
+   the Poisson distribution, the random precipitation trigger based on the exponential
+   distribution, and the standard precipitation index and Gamma distribution.
+   <br/><br/>
+    <b>Chapter 3: Estimation and Decision Making</b><br/>
+    <P>A goal of climate statistics is to make estimates from climate data and use the esti- mates to make quantitative decisions with a given probability of success, described by confidence interval. For example, based on the estimate from the NOAAGlob- alTemp data and given 95% of probability, what is the interval in which lies the true value of the global average decade mean of the 2010s? Was the 1980-2009 global temperature significantly different from the 1950-1979 temperature given the probability 5% of being wrong? Answering a question like this is to make a con- clusive decision based on the estimate of a parameter, such as the global average annual mean temperature from data. With these in mind, we introduce the basic methods of parameter estimation from data, and then introduce the method of decision-making using confidence interval and hypothesis testing. The procedures of estimation and decision-making are constrained by sample size. Climate data are usually serially correlated, and the individual data entries may not be indepen- dent. The actual sample size, neff, may be much smaller than the number of data records n. The uncertainty of the estimates from the climate data is much larger when taking into account of neff. Examples are provided to explain the correct use of neff. The incorrect use of sample size by climate scientists can lead to erroneous decisions. We provide a way to test the serial correlation and to compute the actual sample size. Fundamentally, three elements are involved: data, estimate, and decision-making. Then we may first question: What are climate data? How are they defined? Can we clearly describe the main differences between the definition and observation of climate data?
+    <br/><br/>
+    <b>Chapter 4: Regression Models and Methods </b><br/>
+    <P>The word “regression” means “a return to a previous and less advanced or worse form, state, condition, or way of behaving,” according to the Cambridge dictionary. The first part “regress” of the word originates from the Latin “regressus,” past participle of regredi (“to go back”), from re- (“back”) + gradi (“to go”). Thus, “regress” means “return, to go back” and is in contrast to the commonly used word “progress.” The regression in statistical data analysis refers to a process of returning from the irregular and complex data to a simpler and less perfect state, which is called a model and can be expressed as a curve, a surface, or a function. The function or curve, less complex or less advanced than the irregular data pattern, describes a way of behaving or a relationship. This chapter covers linear models in both uni- and multivariate regressions, least-square estimations of parameters, confidence intervals and inference of the parameters, and fittings of polynomials and other nonlinear curves. By running diagnostic studies on residuals we explain the assumptions of a linear regression model: linearity, homogeneity, independence, and normality. As usual, we use examples of real climate data and provide both R and Python codes.
+    <br/><br/>
+    <b>Chapter 5: Matrices for Climate Data </b><br/>
+    <P>Matrices appear everywhere in climate science. For examples, climate data may be written as a matrix, a two-dimensional rectangular array of numbers or symbols, and most data analyses and multivariate statistical studies require the use of matrices. The study of matrices is often included in a course known as linear algebra. This chapter is limited to (i) describing the basic matrix methods needed for this book, such as the inverse of a matrix and the eigenvector decomposition of a matrix, and (ii) presenting matrix application examples of real climate data, such as the sea level pressure data of Darwin and Tahiti. From climate data matrices, we wish to extract helpful information, such as the spatial patterns of climate dynamics (e.g., El Nin ̃o Southern Oscillation), and temporal occurrence of the patterns. These are related to eigenvectors and eigenvalues of matrices. This chapter features the space-time data arrangement, which uses rows of a matrix for spatial locations, and columns for temporal steps. The singular value decomposition (SVD) helps reveal the spatial and temporal features of climate dynamics as singular vectors and the strength of their variability as singular values.
+    To better focus on matrix theory, some application examples of linear algebra, such as the balance of chemical reaction equations, are not included in the main text, but are arranged as exercise problems. We have also designed exercise problems for the matrix analysis of real climate data from both observations and models.
+    <br/><br/>
+    <b>Chapter 6: Covariance Matrices, EOFs, and PCs </b><br/>
+    <P>Covariance of climate data at two spatial locations is a scaler. The covariances of 56202 climate data at many locations form a matrix. The eigenvectors of a covariance
+   matrix are defined as empirical orthogonal functions (EOFs), which vary in space.
+   The orthonormal projections of the climate data on EOFs yield principal compo-
+   nents (PCs), which vary in time. EOFs and PCs are commonly used in climate data
+   analysis. Physically they may be interpreted as the spatial and temporal patterns or
+   dynamics of a climate process. The eigenvalues of the covariance matrix represent
+   the variances of the climate field for different EOF patterns. The EOFs defined by
+   a covariance matrix are mathematically equivalent to the SVD definition of EOFs,
+   and the SVD definition is computationally more convenient when the space-time
+   data matrix is not too big. The covariance definition of EOFs provides ways of in-
+   terpreting climate dynamics, such as how variance is distributed across the different
+   EOF components.
+   This chapter describes covariance and EOFs for both climate data and stochastic
+   climate fields. The EOF patterns can be thought of as statistical modes. The chapter
+   not only includes the rigorous theory of EOFs and their analytic representations,
+   but also discusses the commonly encountered problems in the EOF calculations
+   and applications, such as area-factor, time-factor, sampling errors of eigenvalues
+   and EOFs. We pay particular attention to independent samples, North’s rule of
+   thumb, and mode mixing.
+    <br/><br/>
+    <b>Chapter 7: Introduction to Time Series </b><br/>
+    <P>Roughly speaking a time series is a string of data indexed according to time, such as a series of daily air temperature data of San Diego in the last 1,000 days, and a series of the daily closing values of the Dow Jones Industrial Average in the previous three months. For these time series data, we often would like to know the following: What is their trend? Is there evidence of a cyclic behavior? Is there a randomness behavior? Eventually can we use these properties to make predictions. For example, one may want to plan for a wedding on the second Saturday of July of next year. She may use the temperature seasonal cycle to plan some logistics, such as clothes and food. She also needs to consider randomness of rain, snow, or a cold front, although she might choose to ignore the climate trend in her approximation.
+Mathematically, a time series is defined as a sequence of random variables, in- dexed by time t and is denoted by Xt. This means that for each time index t, the RV Xt has a probability distribution, ensemble mean (i.e., expected value), variance, skewness, etc. The time series as a whole may show trend, cycle, and random noise. A given string of data indexed by time is a realization of a discrete time series, and is denoted by xt. A time series may be regarded as a collection of infinitely many realizations, which makes a time series different from a deterministic function of time that has a unique value for a given time. A stream of data ordered by time is an individual case drawn from the collection. This chapter will describe methods for the time series analysis, including the methods to quantify trends, cycles, and properties of randomness. In practice, a time series data analysis is for a given dataset, and the randomness property is understood to be part of the analysis but may not be included explicitly at the beginning.
+When t takes discrete values, Xt is a discrete time series. When t takes contin- uous values, Xt is a continuous time series. If not specified, the time series dealt in this book are discrete. This chapter begins with the time series data of CO2, and covers the basic time series terminologies and methods, including white noise, random walk, stochastic process, stationarity, moving average, autoregressive pro- cesses, Brownian motion, and data-model fitting.
+<br/><br/>
+    <b>Chapter 8: Spectral Analysis of Time Series</b><br/> 
+    <P>Global climate models, sometimes known as general circulation models (both are called GCMs) are a Climate has many cyclic properties, such as the seasonal cycle and diurnal cycle. Some cycles are more definite, e.g., sunset time of London, the United Kingdom. Others are less certain, e.g., the monsoon cycles and rainy seasons of India. Still others are quasi-periodic with cycles of variable periods, e.g., El Nin ̃o Southern Oscillation, and Pacific Decadal Oscillation. In general, properties of a cyclic phe- nomenon critically depends the frequency of the cycles. For examples, the color of light depends on the frequency of electromagnetic waves: Red color correspond- ing to the energy in the range of relatively lower frequencies around 400 THz (1 THz = 1012 Hz, 1 Hz = 1 cycle per second), and violet color to higher frequencies around 700 THz. Light is generally a superposition of many colors (frequencies). The brightness of each color is the spectral power of the corresponding frequency. Spectra can also be used to diagnose sound waves. We can tell if a voice is from men or women, because women’s sound usually has more energy in higher frequen- cies while men’s sound has more energy in relatively lower frequencies. The spectra of temperature, precipitation, atmospheric pressure, and wind speed often are dis- tributed in frequencies far lower than light and sound. Spectral analysis, by name, is to quantify the frequencies and their corresponding energies. Climate spectra can help characterize the properties of climate dynamics. This chapter will describe the basic spectral analysis of climate data time series. Both R and Python codes are provided to facilitate readers to reproduce the figures and numerical results in the book.
+
+    <br/><br/>
+    <b>Chapter 9. Introduction to Machine Learning</b><br/> 
+    <P>Machine learning (ML) is a branch of science that uses data and algorithms to mimic how human beings learn. The accuracy of the ML results can be gradually improved based on new training data and algorithm update. For example, a baby learns how to pick an orange from a fruit plate containing apples, bananas and oranges. Another baby learns how to sort out different kinds of fruits from a basket into three categories without naming the fruits. Then, how does ML work? It is basically a decision process for clustering, classification, or prediction, based on the input data, decision criteria, and algorithms. It does not stop here. It further validates the decision results and quantifies errors. The errors and the updated data will help update the algorithms and improve the results.
+ML has recently become a very popular method in climate science due to the availability of powerful and convenient resources of computing. It has been used to predict weather and climate, and to develop climate models. This chapter is a brief introduction of ML and provides basic ideas and examples. Our materials will help readers understand and improve the more complex ML algorithms used in climate science, so that they can go a step beyond only applying the ML software packages as a black box. We also provide R and Python codes for some basic ML algorithms, such as K-means for clustering, support vector machine for the maximum separation of sets, random forest of decision trees for classification and regression, and neural network training and predictions.
+Artificial intelligence (AI) allows computers to automatically learn from past data without human programming, which enables a machine to learn and to have intelligence. Machine learning is a subset of AI. Our chapter here focuses on ML, not the general AI.
+    <br/><br/>
+  </div>
+
+  <div class="footer">
+    <div class="footer_inner">
+      <div id="footer_nav">
+        <div class="copyright">Copyright &copy; 2023. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mobile-menu");
+  
+      if (x.style.left === "0%") {
+      x.style.left = "80%";
+      } else {
+      x.style.left = "0%";
+      }
+    }
+  </script>
+  
+</html>

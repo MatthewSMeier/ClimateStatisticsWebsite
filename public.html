@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Climate Statistics</title>
+    <meta name='description' content="Dr. Sam Shen's personnel website." />
+	<meta name='keywords' content="Professor Samuel Shen, Department Mathematics and Statistics, San Diego State University, SDSU" />
+	<meta content='index,follow' name='robots' />
+	<meta content='index,follow' name='googlebot'/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+
+<body>
+<div class="mobileNavbar">
+    <div class="mobileContainer">
+    <div class = "mobileBottom">Menu</div>
+    <div id="menuIcon2" class = "mobileTop">&#9776;</div>
+    </div>
+    <div id="dropdownMenu" class="dropdown-content">
+        <a class = "mobile" href="./public.html">Home</a>
+        <a class = "mobile" href="./preface.html">Preface</a>
+        <a class = "mobile" href="./toc.html">Book Contents</a>
+        <a class = "mobile" href="./ChapterIntroductions.html">Chapter Introductions</a>
+        <a class = "mobile" href="./Rcodes.html">R-Code</a>
+        <a class = "mobile" href="./PythonCodes.html">Python Code</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">R Tutorial</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">Python Tutorial</a>
+        <a class = "mobile" href="./Datasets.html">Master Dataset</a>
+        <a class = "mobile" href="./AdditionalDatasets.html">Additional Datasets</a>
+        <a class = "mobile" href="./AdditionalExcercises.html">Additional Exercises</a>
+        <a class = "mobile" href="./FiguresAndSlides.html">Figures and Slides</a>
+        <a class = "mobile" href="./Resources.html">Data Visualization</a>
+        <a class = "mobile" href="./SampleSyllabi.html">Sample Syllabi</a>
+        <a class = "mobile" href="./news.html">News</a>
+        <a class = "mobile" href="./Feedback.html">Feedback</a>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("menuIcon2").addEventListener("click", function() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    });
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#menuIcon2')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+        </script>
+    </div>
+</div>
+	<div class="topbar">
+		<div class="logo-header">
+			<a href="http://sdsu.edu">
+				<img class="sdsu-logo" src="images/sdsu_logo.png" alt="SDSU Logo" align="center"/>
+			</a>
+
+			<a href="http://www.cambridge.org">
+				<img class="cambridge-logo" src= "images/cambridge_label.png" alt="Cambridge Logo" align="left"/>
+			</a> 
+
+			<a href="https://www.tamu.edu/index.html">
+				<img class="scripps-logo" src="images/texas_logo.png"  alt="Scripps Logo" align="right"/>
+			</a>
+		</div>
+
+		<div class="hamnav">
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+						
+			<div id="mobile-menu">
+				<div class="collapse" id="about">
+					<a id="mainbutton" class="about" href="#about">About</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./public.html">Home</a></li>
+								<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							 	<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+								<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="computer-code">
+					<a id="mainbutton" class="computer-code" href="#computer-code">Computer Code</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">YouTube Tutorial for R</a></li>
+								<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="datasets">
+					<a id="mainbutton" class="datasets" href="#datasets">Datasets</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+								<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="resources">
+					<a id="mainbutton" class="resources" href="#resources">Resources</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+								<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+								<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+								<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+								<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="news">
+					<a id="mainbutton" class="resources" href="#resources">News</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+								<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+								<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+							</ul>
+						</div>
+					</div>
+                        
+				</div>        
+                
+                
+                
+                
+                
+                
+			</div>
+		</div>
+
+		<div class="navbar-spacing">
+			<div class="navbar">
+				<ul class="navbuttonsgrouped">
+					<li>
+						<a class="navbutton" href="#">About</a>
+						<ul>
+							<li><a class="subbutton" href="./public.html">Home</a></li>
+							<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+							<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Computer Code</a>
+						<ul>
+							<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured">YouTube Tutorial for R</a></li>
+							<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Datasets</a>
+						<ul>
+							<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+							<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Resources</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+							<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+							<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+							<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+							<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+						</ul>
+					</li>
+<li>
+						<a class="navbutton" href="#">News</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./news.html">Book News</a></li>
+							<li><a class="subbutton" href="./Feedback.html">Send Feedback</a></li>
+						</ul>
+</li>
+                    
+                    
+<li>
+<div id="menuIcon"><div class = "MenuTextDesktop">Menu</div>&#9776;</div>
+<div id="menu">
+  <a href="#" class="menuItem">About</a>
+  <div class="submenu">
+    <a href="./public.html" class="submenuItem">Home</a>
+    <a href="./preface.html" class="submenuItem">Preface</a>
+    <a href="./toc.html" class="submenuItem">Book Contents</a>
+    <a href="./ChapterIntroductions.html" class="submenuItem">Chapter Introductions</a>
+  </div>
+  <a href="#" class="menuItem">Computer Code</a>
+    <div class="submenu">
+    <a href="./Rcodes.html" class="submenuItem">R-Code</a>
+    <a href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured" class="submenuItem">R Tutorial</a>
+    <a href="./PythonCodes.html" class="submenuItem">Python Code</a>
+        <a href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s" class="submenuItem">Python Tutorial</a>
+  </div>
+  <a href="#" class="menuItem">Datasets</a>
+  <div class="submenu">
+    <a href="./Datasets.html" class="submenuItem">Master Dataset</a>
+    <a href="./AdditionalDatasets.html" class="submenuItem">Additional Datasets</a>
+  </div>
+  <a href="#" class="menuItem">Resources</a>
+  <div class="submenu">
+    <a href="./FiguresAndSlides.html" class="submenuItem">Figures/Slides</a>
+    <a href="./AdditionalExcercises.html" class="submenuItem">Additional Exercises</a>
+    <a href="./Resources.html" class="submenuItem">Data Visualization</a>
+    <a href="./SampleSyllabi.html" class="submenuItem">Sample Syllabi</a>
+    <a href="./Errata.html" class="submenuItem">Errata</a>
+  </div>
+  <a href="#" class="menuItem">News</a>
+  <div class="submenu">
+    <a href="./news.html" class="submenuItem">Book News</a>
+    <a href="./Feedback.html" class="submenuItem">Send Feedback</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="body-info">
+		<div class="events">
+			<h3 align="center">
+				The book can be purchased online from 
+                <a href="https://www.cambridge.org/us/universitypress/subjects/earth-and-environmental-science/climatology-and-climate-change/statistics-and-data-visualization-climate-science-r-and-python?format=HB&isbn=9781108842570"> Cambridge University Press</a>, or 
+                 from bookstores worldwide: 
+                    <a href="https://www.amazon.com/Statistics-Visualization-Climate-Science-Python/dp/1108842577"> Amazon </a>,
+                   <a href="https://www.barnesandnoble.com/w/statistics-and-data-visualization-in-climate-science-with-r-and-python-samual-s-p-shen/1143782446"> Barnes & Noble </a>,
+                    <a href="https://www.indigo.ca/en-ca/statistics-and-data-visualization-in-climate-science-with-r-and-python/9781108842570.html?searchType=products&searchTerm=undefined"> Indigo Canada </a>, 
+                    <a href="https://uk.bookshop.org/p/books/statistics-and-data-visualization-in-climate-with-r-and-python-samual-s-p-shen/7508127"> Bookshop UK </a>, 
+                      <a href="https://www.kinokuniya.co.jp/f/dsg-02-9781108842570"> Kinokuniya Japan </a>, 
+                    <a href=" https://imusic.dk/books/9781108842570/shen-samuel-s-p-san-diego-state-university-2023-statistics-and-data-visualization-in-climate-science-with-r-and-python-hardcover-bog"> iMusic Denmark </a>
+                  </b><br/> 
+			</h3>
+		</div>
+
+		<div class="BookCover-Comments">
+			<a href="#">
+				<img class="BookCover" src="images/BookCover2.jpg" alt="Climate Mathematics Book Cover" align="left">
+
+			</a>
+
+			<ul class="BookComments">
+                <li>‘This book is written by experts in the field, working on the frontiers of climate science. It enables instructors to “flip the classroom”, and highly motivated students to visualize and
+                analyze their own data sets. The book clearly and succinctly summarizes the applicable statistical principles and formalisms and goes on to provide detailed tutorials on how to apply
+                them, starting with very simple tasks and moving on to illustrate more advanced, state-ofthe-art techniques. Having this book readily available should reduce the time required for
+                advanced undergraduate and graduate students to achieve sufficient proficiency in research
+                methodology to become productive scientists in their own right.’<br>
+					- PROFESSOR JOHN M. WALLACE, University of Washington <br>
+				</li><br>
+				<li>‘Statistics and Data Visualization in Climate Science with R and Python by Sam Shen and
+                    Jerry North is a fabulous addition to the set of tools for scientists, educators and students
+                    who are interested in working with data relevant to climate variability and change ...I can
+                    testify that this book is an enormous help to someone like me. I no longer can simply
+                    ask my grad students and postdocs to download and analyze datasets, but I still want
+                    to ask questions and find data-based answers. This book perfectly fills the 40-year gap
+                    since I last had to do all these things myself, and I can’t wait to begin to use it ...I am
+                    certain that teachers will find the book and supporting materials extremely beneficial as
+                    well. Professors Shen and North have created a resource of enormous benefit to climate
+                    scientists.’
+					<dd>- DR PHILLIP A. ARKIN, University of Maryland</dd>
+				</li> <br>
+
+				<li>‘This book is a gem. It is the proverbial fishing rod to those interested in statistical analysis of climate data and visualization that facilitates insightful interpretation. By providing a plethora of actual examples and R and Python scripts, it lays out the “learning by doing” foundation upon which students and professionals alike can build their own applications
+                to explore climate data. This book will become an invaluable desktop reference in Climate
+                Statistics.’
+					<br>- PROFESSOR ANA P. BARROS, University of Illinois Urbana-Champain 
+				</li> <br>
+
+				<li>‘A valuable toolkit of practical statistical methods and skills for using computers to analyzeand visualize large data sets, this unique book empowers readers to gain physical understanding from climate data. The authors have carried out fundamental research in this field, and they are master teachers who have taught the material often. Their expertise is evident throughout the book.’<br>
+					- PROFESSOR RICHARD C. J. SOMERVILLE, University of California, San Diego
+				</li> <br>
+                <br> 
+                <li> <b>Citation:</b> Shen, S.S.P., and G.R. North, 2023:<i> Statistics and Data Visualization in Climate Science with R and Python</i>, Cambridge University Press, Cambridge, United Kingdom, 391pp.
+				</li> 
+                
+                
+            </ul>
+
+			<div class="about-authors">
+				<br>
+				<p class="about-authors-title"><b>About the authors:</b></p>
+				<div class="row">
+					<div class="column">
+						<a href="#">
+							<img class="Samuel" src="images/SamShen.jpg" alt="Headshot of Samuel Shen">
+						</a>
+						<p class="Samuel-text">
+							<b><a href= "https://shen.sdsu.edu"> Samuel S.P. Shen </a></b> is Distinguished Professor of Mathematics and Statistics at San Diego State University, and Visiting Research Mathematician at Scripps Institution of Oceanography, University of
+                            California – San Diego. Formerly, he was McCalla Professor of Mathematical and Statistical Sciences at the University of Alberta, Canada, and President of the Canadian Applied and Industrial
+                            Mathematics Society. He has held visiting positions at the NASA Goddard Space Flight Center,
+                            the NOAA Climate Prediction Center, and the University of Tokyo. Shen holds a B.Sc. degree in Engineering Mechanics and a Ph.D. degree in Applied Mathematics.
+						</p>
+					</div>
+
+					<div class="column">
+						<a href="#">
+							<img class ="Richard" src="images/gerald_north.png" alt="Headshot of Richard Somerville">
+						</a>
+						<p class="Richard-text">
+							<b><a href= "https://atmo.tamu.edu/people/profiles/emeritus-faculty/northgerald.html"> Gerald R. North</a></b> is University Distinguished Professor Emeritus and former Head of the Department
+                            of Atmospheric Science at Texas A&M University. His research focuses on modern and paleoclimate analysis, satellite remote sensing, climate and hydrology modeling, and statistical methods in
+                            atmospheric science. He is an elected fellow of the American Geophysical Union and the American
+                            Meteorological Society. He has received several awards including the Harold J. Haynes Endowed
+                            Chair in Geosciences of Texas A&M University, the Jules G. Charney medal from the American
+                            Meteorological Society, and the Scientific Achievement medal from NASA. North holds both B.Sc.
+                            and Ph.D. degrees in Physics.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+<script>
+function myFunction() {
+	var x = document.getElementById("mobile-menu");
+
+  	if (x.style.left === "0%") {
+		x.style.left = "80%";
+  	} else {
+		x.style.left = "0%";
+  	}
+  }
+</script>
+
+</html>
+

@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Climate Statistics</title>
+    <meta name='description' content="Dr. Sam Shen's personnel website." />
+	<meta name='keywords' content="Professor Samuel Shen, Department Mathematics and Statistics, San Diego State University, SDSU" />
+	<meta content='index,follow' name='robots' />
+	<meta content='index,follow' name='googlebot'/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+
+<body>
+   <div class="mobileNavbar">
+    <div class="mobileContainer">
+    <div class = "mobileBottom">Menu</div>
+    <div id="menuIcon2" class = "mobileTop">&#9776;</div>
+    </div>
+    <div id="dropdownMenu" class="dropdown-content">
+        <a class = "mobile" href="./public.html">Home</a>
+        <a class = "mobile" href="./preface.html">Preface</a>
+        <a class = "mobile" href="./toc.html">Book Contents</a>
+        <a class = "mobile" href="./ChapterIntroductions.html">Chapter Introductions</a>
+        <a class = "mobile" href="./Rcodes.html">R-Code</a>
+        <a class = "mobile" href="./PythonCodes.html">Python Code</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">R Tutorial</a>
+        <a class = "mobile" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">Python Tutorial</a>
+        <a class = "mobile" href="./Datasets.html">Master Dataset</a>
+        <a class = "mobile" href="./AdditionalDatasets.html">Additional Datasets</a>
+        <a class = "mobile" href="./AdditionalExcercises.html">Additional Exercises</a>
+        <a class = "mobile" href="./FiguresAndSlides.html">Figures and Slides</a>
+        <a class = "mobile" href="./Resources.html">Data Visualization</a>
+        <a class = "mobile" href="./SampleSyllabi.html">Sample Syllabi</a>
+        <a class = "mobile" href="./news.html">News</a>
+        <a class = "mobile" href="./Feedback.html">Feedback</a>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("menuIcon2").addEventListener("click", function() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    });
+});
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('#menuIcon2')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+        </script>
+    </div>
+</div>
+	<div class="topbar">
+		<div class="logo-header">
+			<a href="http://sdsu.edu">
+				<img class="sdsu-logo" src="images/sdsu_logo.png" alt="SDSU Logo" align="center"/>
+			</a>
+
+			<a href="http://www.cambridge.org">
+				<img class="cambridge-logo" src= "images/cambridge_label.png" alt="Cambridge Logo" align="left"/>
+			</a> 
+
+			<a href="https://www.tamu.edu/index.html">
+				<img class="scripps-logo" src="images/texas_logo.png" alt="Scripps Logo" align="right"/>
+			</a>
+		</div>
+
+		<div class="hamnav">
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+						
+			<div id="mobile-menu">
+				<div class="collapse" id="about">
+					<a id="mainbutton" class="about" href="#about">About</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./public.html">Home</a></li>
+								<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							 	<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+								<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="computer-code">
+					<a id="mainbutton" class="computer-code" href="#computer-code">Computer Code</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=mdQhrQIwXmM&t=15s">YouTube Tutorial for R</a></li>
+								<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+								<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="datasets">
+					<a id="mainbutton" class="datasets" href="#datasets">Datasets</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+								<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="collapse" id="resources">
+					<a id="mainbutton" class="resources" href="#resources">Resources</a>
+					<div class="content">
+						<div class="inner-content">
+							<ul>
+								<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+								<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+								<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+								<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+								<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="non-collapse">
+					<a href="./news.html">News</a>
+				</div>
+
+				<div class="non-collapse">
+					<a href="./Feedback.html">Send Us Feedback</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar-spacing">
+			<div class="navbar">
+				<ul class="navbuttonsgrouped">
+					<li>
+						<a class="navbutton" href="#">About</a>
+						<ul>
+							<li><a class="subbutton" href="./public.html">Home</a></li>
+							<li><a class="subbutton" href="./preface.html">Preface</a></li>
+							<li><a class="subbutton" href="./toc.html">Book Contents</a></li>
+							<li><a class="subbutton" href="./ChapterIntroductions.html">Chapter introductions</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Computer Code</a>
+						<ul>
+							<li><a class="subbutton" href="./Rcodes.html">R Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured">YouTube Tutorial for R</a></li>
+							<li><a class="subbutton" href="./PythonCodes.html">Python Code</a></li>
+							<li><a class="subbutton" href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s">YouTube Tutorials for Python</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Datasets</a>
+						<ul>
+							<li><a class="subbutton" href="./Datasets.html">Master dataset for the book</a></li>
+							<li><a class="subbutton" href="./AdditionalDatasets.html">Additional Datasets</a></li>
+						</ul>
+					</li>
+					<li>
+						<a class="navbutton" href="#">Resources</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./FiguresAndSlides.html">Figures and Slides</a></li>
+							<li><a class="subbutton" href="./AdditionalExcercises.html">Addtional Excercises</a></li>
+							<li><a class="subbutton" href="./Resources.html">Data Visualization</a></li>
+							<li><a class="subbutton" href="./SampleSyllabi.html">Sample Syllabi</a></li>
+							<li><a class="subbutton" href="./Errata.html">Errata and New Material</a></li>
+						</ul>
+					</li>
+<li>
+						<a class="navbutton" href="#">News</a>
+						<ul>
+							<li class="test"><a class="subbutton" href="./news.html">Book News</a></li>
+							<li><a class="subbutton" href="./Feedback.html">Send Feedback</a></li>
+						</ul>
+</li>
+                    
+<li>                  
+<div id="menuIcon"><div class = "MenuTextDesktop">Menu</div>&#9776;</div>
+<div id="menu">
+  <a href="#" class="menuItem">About</a>
+  <div class="submenu">
+    <a href="./public.html" class="submenuItem">Home</a>
+    <a href="./preface.html" class="submenuItem">Preface</a>
+    <a href="./toc.html" class="submenuItem">Book Contents</a>
+    <a href="./ChapterIntroductions.html" class="submenuItem">Chapter Introductions</a>
+  </div>
+  <a href="#" class="menuItem">Computer Code</a>
+    <div class="submenu">
+    <a href="./Rcodes.html" class="submenuItem">R-Code</a>
+    <a href="https://www.youtube.com/channel/UC92gEJfTpsVcE92fCeSRbJg/featured" class="submenuItem">R Tutorial</a>
+    <a href="./PythonCodes.html" class="submenuItem">Python Code</a>
+        <a href="https://www.youtube.com/watch?v=Kp3gCWamQlU&t=6s" class="submenuItem">Python Tutorial</a>
+  </div>
+  <a href="#" class="menuItem">Datasets</a>
+  <div class="submenu">
+    <a href="./Datasets.html" class="submenuItem">Master Dataset</a>
+    <a href="./AdditionalDatasets.html" class="submenuItem">Additional Datasets</a>
+  </div>
+  <a href="#" class="menuItem">Resources</a>
+  <div class="submenu">
+    <a href="./FiguresAndSlides.html" class="submenuItem">Figures/Slides</a>
+    <a href="./AdditionalExcercises.html" class="submenuItem">Additional Exercises</a>
+    <a href="./Resources.html" class="submenuItem">Data Visualization</a>
+    <a href="./SampleSyllabi.html" class="submenuItem">Sample Syllabi</a>
+    <a href="./Errata.html" class="submenuItem">Errata</a>
+  </div>
+  <a href="#" class="menuItem">News</a>
+  <div class="submenu">
+    <a href="./news.html" class="submenuItem">Book News</a>
+    <a href="./Feedback.html" class="submenuItem">Send Feedback</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+ <div class="toc">
+    <div id="toc_container">
+        <br/><br/><br/>
+        <center><h2 class="toctitle">Contents</h2></center>
+        <br/>
+        <h3> Brief Contents</h3>
+        <ul class="toc_list">
+            <li>Chapter 1 Basics of Climate Data Arrays, Statistics, and Visualization</li>
+            <li>Chapter 2 Elementary Probability and Statistics</li>
+            <li>Chapter 3 Estimation and Decision Making</li>
+            <li>Chapter 4 Regression Models and Methods</li>
+            <li>Chapter 5 Matrices for Climate Data</li>
+            <li>Chapter 6 Covariance Matrices, EOFs, and PCs</li>
+            <li>Chapter 7 Introduction to Time Series</li>
+            <li>Chapter 8 Spectral Analysis of Time Series</li>
+            <li>Chapter 9 Introduction to Machine Learning </li>
+        </ul>
+        <h3>Full Table of Contents</h3>
+        <ul class="toc_list">
+            <li>Preface page   ix</li>
+            <li>Acknowledgements   xix</li> 
+            <br/>
+            <li><b>Chapter 1: Basics of Climate Data Arrays, Statistics, and Visualization 1 </b>
+                <ul>
+                    <li>1.1  Global temperature anomalies from 1880 to 2018 1 </li>
+                    <ul>
+                        <li>1.1.1  The NOAAGlobalTemp dataset 2</li>
+                        <li>1.1.2 Visualize the data of global average annual mean temperature 3</li>
+                        <li>1.1.3 Statistical indices 8</li>
+                    </ul>
+                    <li>1.2 Commonly used climate statistical plots 11</li>
+                    <ul>
+                        <li>1.2.1 Histogram of a set of data 11</li>
+                        <li>1.2.2 Box plot 13</li>
+                        <li>1.2.3 Q-Q plot 14</li>
+                        <li>1.2.4 Plot a linear trend line 17</li>
+                    </ul>
+                    <li>1.3 Read netCDF data file and plot spatial data maps 18</li>
+                    <ul>
+                        <li>1.3.1 Read netCDF data 18</li>
+                        <li>1.3.2 Plot a spatial map of temperature 20</li>
+                        <li>1.3.3 Panoply plot of a spatial map of temperature 21</li>
+                    </ul>
+                    <li>1.4  1D-space-1D-time data and Hovmo ̈ller diagram 22</li>
+                    <li>1.5  4D netCDF file and its map plotting 24</li>
+                    <li>1.6  Paraview and 4DVD 27</li>
+                    <ul>
+                        <li>1.6.1 Paraview 27</li>
+                        <li>1.6.2 4DVD 28</li>
+                        <li>1.6.3 Other online climate data visualization tools 28</li>
+                    </ul>
+                    <li>1.7  Chapter summary 30</li>
+                    <li>References and Further Readings 31</li>
+                    <ul>
+                        <li>Exercises 32</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 2: Elementary Probability and Statistics 36 </b> 
+                <ul>
+                    <li>2.1 Random variables 36</li>
+                    <ul>
+                        <li>2.1.1 Definition 36</li>
+                        <li>2.1.2 Probabilities of a random variable 40</li>
+                        <li>2.1.3 Conditional probability and Bayes’ theorem 40</li>
+                        <li>2.1.4 Probability of a dry spell 41</li>
+                        <li>2.1.5 Generate random numbers 42</li>
+                    </ul>
+                    <li>2.2  PDF and CDF 43</li>
+                    <ul>
+                        <li>2.2.1 The dry spell example 43</li>
+                        <li>2.2.2 Binomial distribution 46</li>
+                        <li>2.2.3 Normal distribution 49</li>
+                        <li>2.2.4 PDF and histogram 52</li>
+                    </ul>
+                    <li>2.3 Expected values, variances and higher moments of an RV 55</li>
+                    <ul>
+                        <li>2.3.1 Definitions 55</li>
+                        <li>2.3.2 Properties of expected values 56</li>
+                    </ul>
+                    <li>2.4 Joint distributions of X and Y 57</li>
+                    <ul>
+                        <li>2.4.1 Joint distributions and marginal distributions 57</li>
+                        <li>2.4.2 Covariance and correlation 60</li>
+                    </ul>
+                    <li>2.5 Additional commonly used probabilistic distributions in climate science 60</li>
+                    <ul>
+                        <li>2.5.1 Poisson distribution 60</li>
+                        <li>2.5.2 Exponential distribution 62</li>
+                        <li>2.5.3 Mathematical expression of normal distributions, mean,and the central limit theorem 64 </li>
+                        <li>2.5.4 Chi-square χ2 distribution 66</li>
+                        <li>2.5.5 Lognormal distribution 70</li>
+                        <li>2.5.6 Gamma distribution 71</li>
+                        <li>2.5.7 Student’s t-distribution 73</li>
+                    </ul>
+                    <li>2.6  Chapter Summary 73</li>
+                    <li>References and Further Readings 75</li>
+                    <ul>
+                        <li>Exercises 76</li>
+                    </ul>                            
+                </ul>
+            </li><br/>
+            <li><b>Chapter 3: Estimation and Decision Making 79 </b>
+                <ul>
+                    <li>3.1 From data to estimate 79</li>
+                    <ul>
+                        <li>3.1.1 Sample mean and its standard error 79</li>
+                        <li>3.1.2 Confidence interval for the true mean 84</li>
+                    </ul>
+                    <li>3.2 Decision making by statistical inference 92</li>
+                    <ul>
+                        <li>3.2.1 Contingency table for the decision-making with uncertainty 93</li>
+                        <li>3.2.2 Steps of hypothesis testing 94</li>
+                        <li>3.2.3 Interpretations of the significance level, power, and p-value 98</li>
+                        <li>3.2.4 Hypothesis testing for the 1997-2016 mean of the Edmonton January temperature anomalies 99</li>
+                    </ul>
+                    <li>3.3 Effective sample size 101</li>
+                    <li>3.4 Test the goodness of fit 111</li>
+                    <ul>
+                        <li>3.4.1 The number of clear, partly cloudy, and cloudy days 112</li>
+                        <li>3.4.2 Fit the monthly rainfall data to a Gamma distribution 113</li>
+                    </ul>
+                    <li>3.5 Kolmogorov-Smirnov test for cumulative distributions 116</li>
+                    <li>3.6 Decide the existence of a significant relationship 121</li>
+                    <ul>
+                        <li>3.6.1 Correlation and t-test 122</li>
+                        <li>3.6.2 Kendall tau test for the existence of a relationship 124</li>
+                        <li>3.6.3 Mann-Kendall test for trend 126</li>
+                    </ul>
+                    <li>3.7 Chapter summary 127</li>
+                    <li>References and Further Readings 128</li>
+                    <ul>
+                        <li>Exercises 129</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 4: Regression Models and Methods 131 </b> 
+                    <ul>
+                    <li>4.1 Simple linear regression 131</li>
+                    <ul>
+                        <li>4.1.1 Temperature lapse rate and an approximately linear model 131</li>
+                        <li>4.1.2 Assumptions and formula derivations of the single variate linear regression 135</li>
+                        <li>4.1.3 Statistics of slope and intercept: Distributions, confidence intervals, and inference 146</li>
+                    </ul>
+                    <li>4.2 Multiple linear regression 159</li>
+                    <ul>
+                        <li>4.2.1 Calculating the Colorado TLR when taking location coordinates into account 159</li>
+                        <li>4.2.2 Formulas for estimating parameters in the multiple linear regression 162</li>
+                    </ul>
+                    <li>4.3 Nonlinear fittings using the multiple linear regression 164</li>
+                    <ul>
+                        <li>4.3.1 Diagnostics of linear regression: An example of global temperature 164</li>
+                        <li>4.3.2 Fit a third order polynomial 169</li>
+                    </ul>
+                    <li>4.4 Chapter Summary 172</li>
+                    <li>References and Further Readings 173</li>
+                    <ul>
+                        <li>Exercises 174</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 5: Matrices for Climate Data 177 </b>
+                <ul>
+                    <li>5.1 Matrix definitions 177</li>
+                    <li>5.2  Fundamental properties and basic operations of matrices 180 </li>
+                    <li>5.3  Some basic concepts and theories of linear algebra 185 </li>
+                    <ul>
+                        <li>5.3.1 Linear equations 186</li>
+                        <li>5.3.2 Linear transformations 187</li>
+                        <li>5.3.3 Linear independence 187</li>
+                        <li>5.3.4 Determinants 188</li>
+                        <li>5.3.5 Rank of a matrix 189</li>
+                    </ul>
+                    <li>5.4 Eigenvectors and eigenvalues 192</li>
+                    <ul>
+                        <li>5.4.1 Definition of eigenvectors and eigenvalues 192</li>
+                        <li>5.4.2 Properties of eigenvectors and eigenvalues for a symmetric matrix 195</li>
+                    </ul>
+                    <li>5.5 Singular Value Decomposition 198</li>
+                    <ul>
+                        <li>5.5.1 SVD formula and a simple SVD example 199</li>
+                    </ul>
+                    <li>5.6 SVD for the standardized sea level pressure data of Tahiti and Darwin 204</li>
+                    <li>5.7  Chapter Summary 207</li>
+                    <li>References and Further Readings 208</li>
+                    <ul>
+                        <li>Exercises 209</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 6: Covariance Matrices, EOFs, and PCs 213 </b>
+                <ul>
+                    <li>6.1 From a space-time data matrix to a covariance matrix 213</li>
+                    <li>6.2 Definition of EOFs and PCs 221</li>
+                    <ul>
+                        <li>6.2.1 Defining EOFs and PCs from the sample covariance matrix 221</li>
+                        <li>6.2.2 Percentage variance explained 223</li>
+                        <li>6.2.3 Temporal covariance matrix 225</li>
+                    </ul>
+                    <li>6.3 Climate field and its EOFs 227</li>
+                    <ul>
+                        <li>6.3.1 SVD for a climate field 227</li>
+                        <li>6.3.2 Stochastic climate field and covariance function 228</li>
+                    </ul>
+                    <li>6.4 Generating random fields 229</li>
+                    <li>6.5 Sampling errors for EOFs 235</li>
+                    <ul>
+                        <li>6.5.1 Sampling error of mean and variance of a random variable 235</li>
+                        <li>6.5.2 Errors of the sample eigenvalues 236</li>
+                        <li>6.5.3 North’s rule-of-thumb: Errors of the sample eigenvectors 237</li>
+                        <li>6.5.4 EOF errors and mode mixing: A 1D example 238</li>
+                        <li>6.5.5 EOF errors and mode mixing: A 2D example 247</li>
+                        <li>6.5.6 The original paper of North’s Rule-of-Thumb 251</li>
+                        <li>6.5.7 When there is serial correlation 252</li>
+                    </ul>
+                    <li>6.6 Chapter Summary 252</li>
+                    <li>References and Further Readings 254</li>
+                    <ul>
+                        <li>Exercises 255</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 7: Introduction to Time Series 259 </b> 
+                <ul>
+                    <li>7.1 Examples of time series data 259</li>
+                    <ul>
+                        <li>7.1.1 The Keeling curve: Carbon dioxide data of Mauna Loa 260</li>
+                        <li>7.1.2 ETS decomposition of the CO2 time series data 262</li>
+                        <li>7.1.3 Forecasting the CO2 data time series 266</li>
+                        <li>7.1.4 Ten years of daily minimum temperature data of St. Paul, Minnesota, US 268</li>
+                    </ul>
+                    <li>7.2 White noise 271</li>
+                    <li>7.3 Random walk 274</li>
+                    <li>7.4 Stochastic processes and stationarity 280</li>
+                    <ul>
+                        <li>7.4.1 Stochastic processes 280</li>
+                        <li>7.4.2 Stationarity 280</li>
+                        <li>7.4.3 Test for stationarity 281</li>
+                    </ul>
+                    <li>7.5 Moving average time series 282</li>
+                    <li>7.6 Autoregressive process 285</li>
+                    <ul>
+                        <li>7.6.1 Brownian motion and autoregressive model AR(1) 285</li>
+                        <li>7.6.2 Simulations of AR(1) time series 286</li>
+                        <li>7.6.3 Auto-covariance of AR(1) time series when X0 = 0 288</li>
+                    </ul>
+                    <li>7.7 Fit time series models to data 292</li>
+                    <ul>
+                        <li>7.7.1 Estimate the MA(1) model parameters 293</li>
+                        <li>7.7.2 Estimate the AR(1) model parameters 294</li>
+                        <li>7.7.3 Difference a time series 294</li>
+                        <li>7.7.4 AR(p) model estimation using Yule-Walker equations 295</li>
+                        <li>7.7.5 ARIMA(p, d, q) model and data fitting by R 295</li>
+                    </ul>
+                    <li>7.8  Chapter Summary 300</li>
+                    <li>References and Further Readings 302</li>
+                    <ul>
+                        <li>Exercises 303</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 8: Spectral Analysis of Time Series 306 </b> 
+                <ul>
+                    <li>8.1 The sine oscillation 306</li>
+                    <li>8.2 Discrete Fourier series and periodograms 311</li>
+                    <ul>
+                        <li>8.2.1 Discrete sine transform 312</li>
+                        <li>8.2.2 Discrete Fourier transform 313</li>
+                        <li>8.2.3 Energy identity 333</li>
+                        <li>8.2.4 Periodogram of white noise 334</li>
+                    </ul>
+                    <li>8.3 Fourier transform in (−∞, ∞) 335</li>
+                    <li>8.4 Fourier series for a continuous time series on a finite time interval [−T /2, T /2] 336</li>
+                    <li>8.5  Chapter Summary 340</li>
+                    <li>References and Further Readings 343</li>
+                    <ul>
+                        <li>Exercises 344</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li><b>Chapter 9: Introduction to Machine Learning 351 </b> 
+                <ul>
+                    <li>9.1 K-means clustering 351</li>
+                    <ul>
+                        <li>9.1.1 K-means setup and trivial examples 352</li>
+                        <li>9.1.2 A K-means algorithm 358</li>
+                        <li>9.1.3 K-means clustering for the daily Miami weather data 360</li>
+                    </ul>
+                    <li>9.2 Support vector machine 370</li>
+                    <ul>
+                        <li>9.2.1 SVM for a system of three points labeled in two categories 375</li>
+                        <li>9.2.2 SVM mathematical formulation for a system of many points in two categories 379</li>
+                    </ul>
+                    <li>9.3 Random forest method for classification and regression 385</li>
+                    <ul>
+                        <li>9.3.1 RF flower classification for a benchmark iris dataset 385</li>
+                        <li>9.3.2 RF regression for the daily ozone data of New York City 392</li>
+                        <li>9.3.3 What does a decision tree look like? 396</li>
+                    </ul>
+                    <li>9.4 Neural network and deep learning 399</li>
+                    <ul>
+                        <li>9.4.1 An NN model for an automized decision system 399</li>
+                        <li>9.4.2 An NN prediction of iris species 406</li>
+                    </ul>
+                    <li>9.5  Chapter Summary 410</li>
+                    <li>References and Further Readings 411</li>
+                    <ul>
+                        <li>Exercises 412</li>
+                    </ul>
+                </ul>
+            </li><br/>
+            <li>Index 415</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+ <div class="footer">
+  <div class="footer_inner">
+    <div id="footer_nav">
+      <div class="copyright">Copyright &copy; 2023. All rights reserved.</div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("mobile-menu");
+  
+      if (x.style.left === "0%") {
+      x.style.left = "80%";
+      } else {
+      x.style.left = "0%";
+      }
+    }
+  </script>
+
+</html>

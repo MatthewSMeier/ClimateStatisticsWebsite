@@ -1,0 +1,995 @@
+* {
+  margin: 0;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Desktop View*/
+@media screen and (min-width: 601px){
+    .mobileNavbar {
+        display:none;
+    }
+#menuToggle {
+  display: block;
+}
+.MenuTextDesktop {
+    display: inline-block;
+    font-size: 1.7vw;
+    font-weight: 500;
+    margin-right: 0.5vw;
+}   
+
+#menuIcon {
+  display:inline;
+  margin-left: 7vw;
+  margin-right: 2.5vw;
+  cursor: pointer;
+  height: 10vw;
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 0px;
+  background-color: #082F53;
+  color: #fff;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  font-size: 1vw;
+  left: 0;
+  width: 100%;
+  background-color: #082F53;
+  z-index: 1;
+}
+
+.menuItem {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.menuItem:hover {
+  background-color: #082F53;
+}
+
+.submenu {
+  display: none;
+  background-color: #082F53;
+}
+
+.submenuItem {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.submenuItem:hover {
+  background-color: #666;
+}
+    /**END **/
+  .logo-header {
+    padding: 0.5%;
+    background: #57b7e3;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    z-index: 2;
+  }
+
+  /* styling for 3 logos on the header for regular webpage*/
+  .cambridge-logo {
+    margin-top: -3.5%;
+    margin-left: 5%;
+    width: 18%;
+    height: 4vw;
+    display: flex;
+  }
+
+  .sdsu-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    height: 4vw;
+    display: flex;
+  }
+
+  .scripps-logo {
+    padding: 0px;
+    height: 4vw;
+    margin-top: -3.8%;
+    margin-right: 5%;
+    width: 14%;
+    display: flex;
+  }
+
+  .navbar-spacing {
+    /*rgb(56, 103, 148) This was the color used previously */
+    background: rgb(8, 47, 83);
+    position: fixed;
+    margin-top: 5.4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 50vw;
+    z-index: 8;
+    left: 0%;
+    right: 0%;
+
+  }
+
+  .navbuttonsgrouped {
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+  }
+
+  .navbutton {
+    font-size: 1.5vw;
+    margin-right: 10px;
+    color: white;
+    background: rgb(8, 47, 83);  
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.6%;
+    padding-right: 4%;
+    padding-left: 4%;
+    z-index: 6;
+
+  }
+    
+    .hamMenu {
+    margin-left: 0px;
+    font-size: 2.0vw;
+    color: white;
+    background: rgb(8, 47, 83);  
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.6%;
+    padding-right: 4%;
+    padding-left: 4%;
+    z-index: 6;
+  }
+
+  .navbuttonsgrouped li { /* all list items... */
+    display: inline; /* set the list items left-to-right */
+    position: relative;
+    z-index: 5;
+  }
+
+  .navbar ul ul { /* lists within lists... */
+    position: absolute; /* place them over the top of everything */
+    margin-top: auto;
+    left: 8%; /* align them to the left of the parent list item  - necessary for some older browsers */
+    top: 125%; /* align them to the bottom of the parent list item - again only necessary for older browsers */
+    display: none; /* hide 'em */
+    z-index: 5;
+  }
+
+  .navbuttonsgrouped li:hover ul { /* when list items are hovered over, do this to lists contained within them... */
+    display: block; /* show submenu */
+    background: rgb(8, 47, 83);
+
+  }
+
+  .subbutton{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(8, 47, 83);
+  }
+
+  .subbutton:hover {
+    color: black;
+    background: white;
+  }
+    
+  .subbuttonA{
+    margin-left: 20px;
+    display: block;
+    color: hotpink;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(8, 47, 83);
+  }
+
+  .subbuttonA:hover {
+    color: black;
+    background: white;
+  }
+
+  .body-info {
+    padding-top: 10%;
+  }
+
+  .events{
+    position: flex;
+    font-size: 1.2vw;
+    border: 0.4vw solid #57b7e3;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .BookCover {
+    width: 27%;
+    margin-left: 7%;
+  }
+
+  .BookComments {
+    font-size: 1.1vw;
+    list-style-type: disc;
+    padding-top: 0%;
+    padding-left: 38%;
+    margin-right: 5%;
+  }
+
+  .citation {
+
+    font-size: 1.2vw;
+    list-style-type: disc;
+    padding-top: 3%;
+    padding-left: 40%;
+    margin-right: 5%;
+  }
+
+  .about-authors-title {
+    margin-top: 0%;
+    margin-left: 6%;
+    font-size: 1.5vw;
+
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 1%;
+  }
+
+  .Samuel {
+    max-height: 11vw;
+    min-height: 11vw;
+    max-width: 15vw;
+    min-width: 15vw;
+    display: block;
+    margin-left: 35%;
+  }
+
+  .Richard {
+    max-height: 11vw;
+    min-height: 11vw;
+    max-width: 15vw;
+    min-width: 15vw;
+    display: block;
+    margin-left: 27%;
+  }
+
+
+  .Samuel-text {
+    margin-top: 2%;
+    font-size: 1.2vw;
+    margin-left: 10%;
+  }
+
+  .Richard-text {
+    margin-top: 2%;
+    font-size: 1.2vw;
+    margin-right: 10%;
+  }
+
+  .hamnav{
+    display: none;
+  }
+
+  /*Formatting for preface*/
+  .preface{
+    position: flex;
+    font-size: 1.2vw;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .prefaceh{
+    margin: 1%;
+  }
+
+  /*Formatting for chapter contents*/
+  
+  .toc{
+    padding-top: 5%;
+    font-size: 1.2vw;
+    margin-left: 15%;
+  }
+
+  .toc h3{
+    margin-bottom: 2%;
+  }
+
+  .toctitle{
+    margin-left: -15%;
+  }
+
+  .toc_list{
+    margin-left: 3%;
+    margin-bottom: 2%;
+  }
+  .toc_list ul {
+    margin-left: 3%;
+  }
+
+  /*Formatting chapter introductions*/
+  .chapterIntroductions{
+    padding-top: 7%;
+    position: flex;
+    font-size: 1.2vw;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  /*Format for sample syllabi*/
+  #sampleSyllabi{
+    padding-top: 7%;
+  }
+    
+  .syllabiinfo{
+    margin-top: 1%;
+    text-align: center;
+  }
+
+  /*Rcodes*/
+
+  #Rcodes {
+    padding-top: 7%;
+  }
+
+  .Rcodestitle{
+    margin-bottom: 3%;
+  }
+
+  /*Python codes*/
+  #pythoncodes {
+    padding-top: 7%;
+  }
+
+  .pythoncodestitle{
+    margin-bottom: 3%;
+  }
+
+  /*Datasets*/
+  #datasetspage {
+    padding-top: 7%;
+  }
+
+  .datasetstitle{
+    margin-bottom: 3%;
+  }
+
+  /*Figures and slides*/
+  #figuresandslides{
+    padding-top: 7%;
+  }
+
+  .figuretitle{
+    margin-bottom: 3%;
+  }
+
+  /*Solutions*/
+  #solutions{
+    padding-top: 7%;
+  }
+
+  /*Additional Excercises*/
+  #additionalexcercises{
+    padding-top: 7%;
+  }
+
+  .additionalexcercisestitle{
+    margin-bottom: 3%;
+  }
+
+  /*Resources*/
+  #resourcespage{
+    padding-top: 7%;
+  }
+
+  .resourcestitle{
+    margin-bottom: 3%;
+  }
+
+  .resource1{
+    width: 50%;
+    margin: 1% 25%;;
+  }
+
+  .resource2{
+    width: 50%;
+    margin: 1% 25%;;
+  }
+
+  /*Errata*/
+  #errata{
+    padding-top: 7%;
+  }
+
+  /*News*/
+  #newspage{
+    padding-top: 10%;
+  }
+
+  .newspagetitle{
+    text-align: center;
+  }
+
+  .news{
+    margin: 2% 5%;
+    font-size: 1.2vw;
+  }
+
+  .newselementdate{
+    display: inline-flex;
+    margin-top: 1.5%;
+  }
+
+  .newselementcontent{
+    display: inline-block;
+    margin-left: 1%;
+    font-size: 1.5vw;
+  }
+
+  /*Feedback*/
+  .center_layout{
+    padding-top: 9%;
+    text-align: center;
+  }
+
+  .feedbacktitle{
+    margin-bottom: 2%;
+  }
+
+  /*Footer format*/
+  .syllabi .footer{
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    text-align: center;
+  }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile view*/
+@media screen and (max-width: 600px){
+  * {
+    font-size: 4vw;
+  }
+    
+    .extramargin {
+        padding-top: 3.5vw;
+    }
+
+    /**end**/
+  .logo-header{
+    padding: 7%;
+    background: #57b7e3;
+    z-index: 8;
+    position: fixed;
+    top: 0;
+  }
+
+  body {
+    padding-top: 0%;
+  }
+
+  .scripps-logo{
+    display: none;
+  }
+
+  .sdsu-logo{
+    display: none;
+  }
+
+  .cambridge-logo{
+    margin-left: -3%;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .icon {
+    display: block;
+    color: black;
+    cursor: pointer;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    float: right;
+    margin-top: 7.5%;
+    margin-right: 7%;
+    position: fixed;
+  }
+  
+
+  .hamnav a{
+    text-decoration: none;
+  }
+
+  .fa.fa-bars{
+    font-size: 24px;
+  }
+
+  #mobile-menu{
+    position: fixed;
+    width: 100%;
+    margin-left: 20%;
+    height: 100%;
+    top: auto;
+    left: 80%;
+    margin-top: -2.5%;
+    padding-bottom: 100%;
+    text-align: center;
+    transition: all .5s;
+    background: rgb(8, 47, 83);
+    overflow-y: auto;
+
+
+  }
+
+  #mainbutton, .non-collapse a {
+    top: auto;
+    color: white;
+    font-size: 1.1rem;
+    padding: 5%;
+    border-radius: 5%;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  .subbutton {
+    text-align: left;
+    font-size: 1rem;
+    color: white;
+    padding: 6%;
+    border-bottom: 2px solid rgb(8, 47, 83);
+  }
+
+  #mobile-menu a{
+    display: flex;
+  }
+
+  .content {
+    max-height: 0em;
+    overflow: hidden;
+    z-index: 8;
+  }
+    .inner-content {
+        font-size: 1px;
+    }
+  
+  .collapse:target .content {
+    max-height: 100em;
+    background: #57b7e3;
+  }
+
+  .navbar-spacing{
+    display: none;
+  }
+
+  .events{
+    position: flex;
+    border: 0.4vw solid #57b7e3;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .BookCover{
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+  }
+
+  .BookComments{
+    margin: 3%
+  }
+
+  .citation{
+    margin: 3%;
+  }
+
+  .about-authors-title{
+    text-align: center;
+    
+  }
+
+  .Samuel{
+    width: 60%;
+    margin: 3% 20%;
+  }
+
+  .Samuel-text{
+    margin: 3%;
+  }
+
+  .Richard{
+    width: 60%;
+    margin: 3% 20%;
+  }
+
+  .Richard-text{
+    margin: 3%;
+  }
+
+  /*Formatting for preface*/
+  .preface{
+    margin-top: -26%;
+    margin-bottom: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  .prefaceimg{
+    width: 80%;
+  }
+
+  .prefaceh{
+    font-size: 1.5em;
+    margin-bottom: 3%;
+  }
+
+  /*Formatting for chapter contents*/
+  
+  .toc{
+    padding-top: 5%;
+    font-size: 1.2em;
+    margin-left: 3%;
+  }
+
+  .toc h3{
+    margin-bottom: 2%;
+  }
+
+  .toctitle{
+    font-size: 1.5em;
+    margin-top: -15%;
+    margin-left: -3%;
+  }
+
+  .toc_list{
+    margin-left: 5%;
+    margin-bottom: 2%;
+  }
+  .toc_list ul {
+    margin-left: 5%;
+  }
+
+  /*Chapter introductions format*/
+  .chapterIntroductions{
+    margin-bottom: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+
+  /*Format for sample syllabi*/
+  #sampleSyllabi{
+    margin-top: -10%;
+  }
+
+  .syllabiinfo{
+    margin-top: 1%;
+    text-align: center;
+  }
+
+  /*Rcodes*/
+  #Rcodes {
+    padding-top: 18%;
+  }
+
+  .Rcodestitle{
+    margin-bottom: 3%;
+  }
+
+  /*Python codes*/
+  #pythoncodes {
+    padding-top: 18%;
+  }
+
+  .pythoncodestitle{
+    margin-bottom: 3%;
+  }
+
+  /*Datasets*/
+  #datasetspage {
+    padding-top: 18%;
+  }
+
+  .datasetstitle{
+    margin-bottom: 3%;
+  }
+  /*Figure and sldies*/
+  #figuresandslides{
+    padding-top: 18%;
+  }
+
+  .figuretitle{
+    margin-bottom: 3%;
+  }
+  /*Solutions*/
+  #solutions{
+    padding-top: 18%;
+  }
+
+  /*Additional Excercises*/
+  #additionalexcercises{
+    padding-top: 18%;
+  }
+
+  .additionalexcercisestitle{
+    margin-bottom: 3%;
+  }
+
+  /*Resources*/
+  #resourcespage{
+    padding-top: 18%;
+  }
+
+  .resourcestitle{
+    margin-bottom: 3%;
+  }
+
+  .resource1{
+    width: 90%;
+    margin: 1% 5%;
+  }
+
+  .resource2{
+    width: 90%;
+    margin: 1% 5%;
+  }
+
+  /*Errata*/
+  #errata{
+    padding-top: 18%;
+    text-align: center;
+  }
+
+  /*News*/
+  #newspage{
+    padding-top: 25%;
+  }
+
+  .newspagetitle{
+    text-align: center;
+  }
+
+  .news{
+    margin: 2% 5%;
+    font-size: 1.2vw;
+  }
+  .newselementdate{
+    display: inline-flex;
+    margin-top: 1.5%;
+  }
+
+  .newselementcontent{
+    display: inline-block;
+    margin-left: 1%;
+  }
+
+  /*Feedback*/
+  .center_layout{
+    text-align: center;
+  }
+
+  .feedbacktitle{
+    margin-top: 22%;
+    margin-bottom: 2%;
+  }
+
+  /*Footer format*/
+  .syllabi .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    z-index: -1;
+  }
+    
+    :root {
+        --bar-width: 60px;
+        --bar-height: 8px;
+        --hamburger-gap: 6px;
+    }    
+    
+/* Hamburger Menu Styles */
+ 
+    
+    
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger-menu input {
+  display: none;
+}
+
+.hamburger-menu .icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  background-color: #333;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar div {
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* ... (existing CSS content) ... */
+
+    #menu {
+        font-size: 1.5vw;
+    }
+    .navbuttonsgrouped {
+        display:none;
+    }
+    .navbutton{
+        display:none;
+    }
+      /*TEST*/ 
+.mobileNavbar {
+    height: 15vw;
+    background-color: #082F53;
+}
+    .mobileContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: flex-end/* Centers items horizontally */
+    }
+    .mobileBottom {
+        margin-right: 1vw;
+        font-size: 4vw;
+        margin-top: 2vw;
+        color: white;
+    }
+    .mobile {
+        font-size: 2vw;
+    }
+
+
+#menuIcon2 {
+    display: inline;
+    cursor: pointer;
+    font-size: 10vw;
+    font-weight: bold;
+    padding: 0px;
+    background-color: #082F53;
+    color: #fff;
+    float: right;
+    margin-right: 5vw;
+}
+
+.dropdown-content {
+    font-size: 1vw;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #082F53;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+    }
+  .cambridge-logo {
+    display: none;
+  }
+
+  .sdsu-logo {
+    display: none;
+  }
+
+  .scripps-logo {
+    display:none;
+  }
+    .logo-header {
+        display:none;
+    }
+    .newspagetitle {
+        padding-top: 5vw;
+    }
+
+}
+   /*TEST*/ 
+
